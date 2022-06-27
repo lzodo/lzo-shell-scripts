@@ -10,7 +10,7 @@ publish(){
 }
 
 helpdoc(){
-cat <<EOF
+    cat <<EOF
 Description:
 
     This is a help document
@@ -36,7 +36,7 @@ while getopts "d:m:h" OPT
 do
     case $OPT in
         d) BASEDIR=$OPTARG;;
-        m) MSG=$OPTARG;;
+        m) MSG="${MSG}($OPTARG)";;
         h) helpdoc;;
         ?) 
             echo "`basename $0` [options] 异常请 '-h' 查看帮助文档"
