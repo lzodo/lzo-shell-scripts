@@ -30,7 +30,7 @@ List=(`curl -H "Accept: application/vnd.github+json" https://api.github.com/sear
 Total=0
 
 echo " "
-echo "======================list start================================="
+echo "======================${1} 查询============================"
 echo " "
 for(( i=0; i<=${#List[@]}; i++ ))
 do
@@ -70,5 +70,5 @@ do
     fi
 done
 echo " "
-echo "========================list end============================="
+echo "=========================================================="
 echo "共 ${Total} 个"

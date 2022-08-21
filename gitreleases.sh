@@ -28,7 +28,7 @@ fi
 # -s 不输出下载进度
 List=(`curl -H "Accept: application/vnd.github+json" https://api.github.com/repos/${1}/${2}/releases\?page\=1\&per_page\=${PER_PAGE}`)
 
-
+echo "======================${2} replace 列表================================="
 Total=0
 for(( i=0; i<=${#List[@]}; i++ ))
 do
