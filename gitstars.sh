@@ -8,7 +8,7 @@ if [[ $1 =~ ^[0-9]+$ ]];then
     PAGE=$1
 fi
 
-# List=(`curl -u "liaozhongxun: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lzO" https://api.github.com/users/liaozhongxun/starred\?page\=1\&per_page\=200`)
+# List=(`curl -u "liaozhongxun:ghp_xxx" https://api.github.com/users/liaozhongxun/starred\?page\=1\&per_page\=200`)
 List=(`curl -H "Accept: application/vnd.github+json"  https://api.github.com/users/liaozhongxun/starred\?page\=$PAGE\&per_page\=100`)
 
 echo "====================Stars 列表== page ${PAGE} ==================="

@@ -19,7 +19,7 @@ else
     PER_PAGE=$2
 fi
 
-#List=(`curl -H "Accept: application/vnd.github+json" -H "Authorization: token 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lzO" https://api.github.com/search/repositories\?q\=${1}\&sort\=stars`)
+#List=(`curl -H "Accept: application/vnd.github+json" -H "Authorization: token ghp_xxx" https://api.github.com/search/repositories\?q\=${1}\&sort\=stars`)
 List=(`curl -H "Accept: application/vnd.github+json" https://api.github.com/search/repositories\?q\=${1}\&sort\=stars\&page\=1\&per_page\=${PER_PAGE}`)
 # NUM="2,"
 # echo $NUM

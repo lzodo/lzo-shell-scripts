@@ -2,7 +2,7 @@
 # 获取自己所有项目列表
 # -s 不输出下载进度
 # List=(`curl -H "Accept: application/vnd.github+json" -H "Authorization: token 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lzO" https://api.github.com/users/liaozhongxun/repos\?page\=1\&per_page\=2`)
-List=(`curl -H "Accept: application/vnd.github+json" https://api.github.com/users/liaozhongxun/repos\?page\=1\&per_page\=200`)
+List=(`curl -H "Accept: application/vnd.github+json" https://api.github.com/users/liaozhongxun/repos\?page\=1\&per_page\=100`)
 
 echo "=======================我的仓库======================="
 Total=0
